@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formula 1 fan community landing page with links to our main social media: YouTube, Twitter, Discord">
+    <title>F1 fun club</title>
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="logo">
+                <a href="#">F1 fun club</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero-banner">Home</a></li>
+                    <li><a href="#gallery-section">Gallery</a></li>
+                    <li><a href="#links-section">Links</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-handler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <section id="hero-banner">
+            <div class="content">
+                <h1>Interested in F1?</h1>
+                <button class="btn">Join us</a>
+            </div>
+        </section>
+        <section class="what-is-f1">
+            <div class="info-block-top">
+                <img src="./images/car-sideview1.png" alt="car-sideview">
+                <div class="text-col-right">
+                    <h2>What is Formula 1</h2>
+                    <p>Formula 1  is the premier motorsport racing series, featuring high-speed, open-wheel cars with cutting-edge technology, global races, and a focus on speed, strategy, and innovation.</p>
+                </div>    
+            </div>
+            <div class="info-block-bottom">
+                <p>F1 races feature a grid of 20 drivers competing on various tracks worldwide. Races involve high-speed duels, pit stops, and strategic maneuvering to secure victory.</p>
+                <div class="tracks">
+                    <img src="./images/track1.png" alt="track-contour-1">
+                    <img src="./images/track2.png" alt="track-contour-2">
+                </div>
+            </div>
+        </section>
+        <section class="teams">
+            <h2>F1 teams</h2>
+        </section>
+        <section id="gallery-section" class="gallery">
+            <div class="main-frame">
+                <div class="popup-container">
+                    <div class="popup-content">
+                        <svg id="close-popup" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M36.4072 6.40723C37.8721 4.94238 37.8721 2.56348 36.4072 1.09863C34.9424 -0.366211 32.5635 -0.366211 31.0986 1.09863L18.7588 13.4502L6.40723 1.11035C4.94238 -0.354492 2.56348 -0.354492 1.09863 1.11035C-0.366211 2.5752 -0.366211 4.9541 1.09863 6.41894L13.4502 18.7588L1.11035 31.1103C-0.354492 32.5752 -0.354492 34.9541 1.11035 36.4189C2.5752 37.8838 4.9541 37.8838 6.41894 36.4189L18.7588 24.0674L31.1103 36.4072C32.5752 37.8721 34.9541 37.8721 36.4189 36.4072C37.8838 34.9424 37.8838 32.5635 36.4189 31.0986L24.0674 18.7588L36.4072 6.40723Z"/>
+                          </svg>
+                        <img src="" alt="popup-image" id="popup-img">
+                    </div>
+                </div>
+                <img class="curr-img popup-trigger" src="./images/gallery/red-bull.png" alt="red-bull-photo">
+            </div>
+            <div class="carousel">
+                <button id="arrow-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="64" viewBox="0 0 40 64" fill="none">
+                        <path d="M9.1625 29.1749C7.6 30.7374 7.6 33.2749 9.1625 34.8374L33.1625 58.8374C34.725 60.3999 37.2625 60.3999 38.825 58.8374C40.3875 57.2749 40.3875 54.7374 38.825 53.1749L17.65 31.9999L38.8125 10.8249C40.375 9.26235 40.375 6.72485 38.8125 5.16235C37.25 3.59985 34.7125 3.59985 33.15 5.16235L9.15 29.1624L9.1625 29.1749Z" fill="#FE654F"/>
+                    </svg>
+                </button>
+                <div class="slides-container">
+                    <ul class="slide-list">
+                        <li class="slide"><img src="./images/gallery/mc-laren.png" alt="mclaren-photo"></li>
+                        <li class="slide"><img src="./images/gallery/red-bull.png" alt="red-bull-photo"></li>
+                        <li class="slide"><img src="./images/gallery/aston-martin.png" alt="aston-martin-photo"></li>
+                    </ul>
+                </div>
+                <button id="arrow-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="64" viewBox="0 0 40 64" fill="none">
+                        <path d="M38.825 34.8249C40.3875 33.2624 40.3875 30.7249 38.825 29.1624L14.825 5.16239C13.2625 3.59989 10.725 3.59989 9.16248 5.16239C7.59998 6.72489 7.59998 9.26239 9.16248 10.8249L30.3375 31.9999L9.17498 53.1749C7.61248 54.7374 7.61248 57.2749 9.17498 58.8374C10.7375 60.3999 13.275 60.3999 14.8375 58.8374L38.8375 34.8374L38.825 34.8249Z" fill="#FE654F"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section id="links-section" class="social-media">
+            <h2>Check our social media to be aware of all news in F1 world</h2>
+            <div class="media">
+                <a href="youtube.com" target="_blank">
+                    <div class="media-card">
+                        <img src="./images/icons/youtube.svg" alt="youtube-logo" class="media-logo">
+                        <h3>Long informative videos about the history, technical side and analytics of Formula 1</h3>
+                    </div>
+                </a>
+                <a href="twitter.com" target="_blank">
+                    <div class="media-card">
+                        <img src="./images/icons/x-twitter.svg" alt="x-logo" class="media-logo">
+                        <h3>Short daily digests with the latest Formula 1 news</h3>
+                    </div>
+                </a>
+                <a href="discord.com" target="_blank">
+                    <div class="media-card">
+                        <img src="./images/icons/discord.svg" alt="discord-logo" class="media-logo">
+                        <h3>Space where you can find the same F1 fans as you for a fun conversations</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="col-left-logo">
+                <div class="logo">
+                    <a href="#">F1 fun club</a>
+                </div>
+            </div>
+            <div class="col-right-social-media">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <a href="youtube.com" target="_blank">
+                            <span>YouTube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="twitter.com" target="_blank">
+                            <span>Twitter/X</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="discord.com" target="_blank">
+                            <span>Discord</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
